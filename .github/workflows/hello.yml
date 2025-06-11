@@ -1,0 +1,15 @@
+name: workflow
+
+# Evento
+on:
+  workflow_dispatch:
+
+# Trabajos
+jobs:
+  trabajo1:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Runs a single command using the runners shell
+      - name: Echo Terminal
+        run: echo Hello, world!
